@@ -143,7 +143,7 @@ class QUICHE_NO_EXPORT QuicIntervalDeque {
   class QUICHE_NO_EXPORT Iterator {
    public:
     // Used by |std::lower_bound|
-    using iterator_category = std::forward_iterator_tag;
+    using iterator_category = std::random_access_iterator_tag;
     using value_type = T;
     using difference_type = std::ptrdiff_t;
     using pointer = T*;
